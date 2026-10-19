@@ -1,0 +1,66 @@
+
+/* Load Tailwind CSS v4 utilities. */
+@import "tailwindcss";
+
+/* Establish the FORM / PROPERTY visual foundation. */
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #171717;
+  background: #F7F7F4;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Make sizing consistent across all components. */
+* {
+  box-sizing: border-box;
+}
+
+/* Enable smooth navigation between sections. */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default browser spacing. */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Keep controls consistent with the site typography. */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/* Remove default link styling. */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Use a visible selection color that matches the brand. */
+::selection {
+  color: #FFFFFF;
+  background: #E5392D;
+}
+
+/* Respect reduced-motion preferences. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
