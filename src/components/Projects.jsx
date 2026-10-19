@@ -1,4 +1,3 @@
-
 /* Import the arrow icon for project links. */
 import { ArrowUpRight } from "lucide-react";
 
@@ -12,8 +11,9 @@ export default function Projects() {
       type: "Contemporary residence",
       location: "Chennai, Tamil Nadu",
       price: "₹2.40 Cr",
+      // Alternative modern residential architecture image.
       image:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85",
     },
     {
       number: "02",
@@ -64,8 +64,6 @@ export default function Projects() {
                 loading="lazy"
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
               />
-
-              
             </div>
 
             {/* Property information stays outside the image. */}
